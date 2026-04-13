@@ -110,6 +110,19 @@
       header {padding:20px; flex-direction:column;}
       .hero h2 {font-size:32px;}
     }
+    .wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 15px 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 999;
+}
   </style>
 </head>
 <body>
@@ -231,7 +244,9 @@
 <section class="section">
   <h2>Kontak Kami</h2>
   <p>Hubungi kami untuk pemesanan dan informasi lebih lanjut</p>
-  <a href="#" class="btn">WhatsApp</a>
+  <a href="https://wa.me/+6285233749200?text=Halo%20saya%20tertarik%20kayu%20jati" class="btn" target="_blank">
+  WhatsApp
+</a>
 </section>
 
 <footer>
@@ -251,6 +266,8 @@ document.querySelectorAll(".carousel").forEach(carousel => {
   }, 3000);
 });
 </script>
-
+<a href="https://wa.me/+6285233749200" class="wa-float" target="_blank">
+  💬
+</a>
 </body>
 </html>
