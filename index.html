@@ -10,15 +10,23 @@
     body {background:#111; color:#fff;}
 
     header {
-      display:flex; justify-content:space-between; align-items:center;
-      padding:15px 60px; position:sticky; top:0; z-index:100;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 60px;
+      position:sticky;
+      top:0;
+      z-index:100;
+
+      /* 🔥 FIX: background HARUS di dalam {} */
+      background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('kayujati.png');
+      background-size:cover;
+      background-position:center;
+      backdrop-filter: blur(5px);
     }
-    background:
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url('kayujati.png');
-    background-size:cover;
-  background-position:center;
-  backdrop-filter: blur(5px);
+
     .logo {
       display:flex; align-items:center; gap:10px;
     }
@@ -97,13 +105,15 @@
       text-align:center;
       margin-top:50px;
       font-size:14px;
-    }
-  background:
-    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
-    url('kayujati.png'); /* GANTI GAMBAR */
 
-  background-size:cover;
-  background-position:center;
+      /* 🔥 FIX: ini juga harus di dalam {} */
+      background:
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+        url('kayujati.png');
+      background-size:cover;
+      background-position:center;
+    }
+
     @media(max-width:768px){
       header {padding:20px; flex-direction:column;}
       .hero h2 {font-size:32px;}
@@ -164,29 +174,25 @@
   <h2>Produk Unggulan</h2>
   <div class="produk">
     <div class="card">
-
       <div class="carousel">
         <div class="slides">
-          <img src="materialmentah/material.mentah1.jpeg" width="300">
-          <img src="materialmentah/material.mentah2.jpeg" width="300">
-          <img src="materialmentah/material.mentah3.jpeg" width="300">
-          <img src="materialmentah/material.mentah4.jpeg" width="300">
+          <img src="materialmentah/material.mentah1.jpeg">
+          <img src="materialmentah/material.mentah2.jpeg">
+          <img src="materialmentah/material.mentah3.jpeg">
+          <img src="materialmentah/material.mentah4.jpeg">
         </div>
       </div>
-
       <h3>Material Mentah</h3>
       <p>Menyediakan gelondongan (logs) dan soko jati berkualitas tinggi dengan berbagai ukuran.</p>
-
     </div>
 
     <div class="card">
-     
-<div class="carousel">
+      <div class="carousel">
         <div class="slides">
-          <img src="kusen/kusen1.jpeg" width="300">
-          <img src="kusen/kusen2.jpeg" width="300">
-          <img src="kusen/kusen3.jpeg" width="300">
-          <img src="kusen/kusen4.jpeg" width="300">
+          <img src="kusen/kusen1.jpeg">
+          <img src="kusen/kusen2.jpeg">
+          <img src="kusen/kusen3.jpeg">
+          <img src="kusen/kusen4.jpeg">
         </div>
       </div>
       <h3>Kusen & Pintu</h3>
@@ -196,13 +202,12 @@
     <div class="card">
       <div class="carousel">
         <div class="slides">
-          <img src="struktur/struktur1.jpeg" width="300">
-          <img src="struktur/struktur2.jpeg" width="300">
-          <img src="struktur/struktur3.jpeg" width="300">
-          <img src="struktur/struktur4.jpeg" width="300">
+          <img src="struktur/struktur1.jpeg">
+          <img src="struktur/struktur2.jpeg">
+          <img src="struktur/struktur3.jpeg">
+          <img src="struktur/struktur4.jpeg">
         </div>
       </div>
-
       <h3>Struktur Kayu</h3>
       <p>Ahli dalam pembuatan gazebo taman dan balok struktural untuk konstruksi rumah kayu.</p>
     </div>
@@ -213,21 +218,21 @@
   <h2>Galeri</h2>
   <div class="galeri">
     <div class="carousel">
-        <div class="slides">
-    <img src="galeri1.jpeg">
-    <img src="galeri2.jpeg">
-    <img src="galeri3.jpeg">
-    <img src="galeri4.jpeg">
-    <img src="galeri5.jpeg">
-    <img src="galeri6.jpeg">
-    <img src="galeri7.jpeg">
-    <img src="galeri8.jpeg">
-    <img src="galeri9.jpeg">
-    <img src="galeri10.jpeg">
-    <img src="galeri11.jpeg">
-    <img src="galeri12.jpeg">
-</div>
+      <div class="slides">
+        <img src="galeri1.jpeg">
+        <img src="galeri2.jpeg">
+        <img src="galeri3.jpeg">
+        <img src="galeri4.jpeg">
+        <img src="galeri5.jpeg">
+        <img src="galeri6.jpeg">
+        <img src="galeri7.jpeg">
+        <img src="galeri8.jpeg">
+        <img src="galeri9.jpeg">
+        <img src="galeri10.jpeg">
+        <img src="galeri11.jpeg">
+        <img src="galeri12.jpeg">
       </div>
+    </div>
   </div>
 </section>
 
@@ -242,7 +247,6 @@
   <p>Selembut Hati, Sekuat Jati</p>
 </footer>
 
-<!-- === JS FIX === -->
 <script>
 document.querySelectorAll(".carousel").forEach(carousel => {
   const slides = carousel.querySelector(".slides");
