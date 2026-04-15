@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - UD Legowo Jati</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+    body {background:#111; color:#fff;}
+
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 60px;
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:#c19a6b;
+    }
+
+    .logo {display:flex; align-items:center; gap:10px;}
+    .logo img {height:45px;}
+    .logo span {color:#fff; font-weight:600;}
+
+    nav a {
+      margin:0 15px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    nav a:hover {color:#000;}
+
+    .hero {
+      height:60vh;
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('kayujati.png');
+      background-size:cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .hero h1 {
+      font-size:42px;
+      color:#c19a6b;
+    }
+
+    .section {
+      padding:70px 60px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .section h2 {
+      font-size:28px;
+      color:#c19a6b;
+      margin-bottom:20px;
+    }
+
+    .section p {
+      line-height:1.8;
+      margin-bottom:20px;
+      color:#ddd;
+    }
+
+    .highlight {
+      background:#1a1a1a;
+      padding:25px;
+      border-left:5px solid #c19a6b;
+      border-radius:8px;
+      margin-top:30px;
+    }
+
+    .grid {
+      display:flex;
+      gap:30px;
+      flex-wrap:wrap;
+      margin-top:40px;
+    }
+
+    .card {
+      flex:1;
+      min-width:250px;
+      background:#1a1a1a;
+      padding:25px;
+      border-radius:10px;
+      text-align:center;
+    }
+
+    .card h3 {
+      color:#c19a6b;
+      margin-bottom:10px;
+    }
+
+    footer {
+      padding:30px;
+      text-align:center;
+      margin-top:50px;
+      font-size:14px;
+      background:
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+        url('kayujati.png');
+      background-size:cover;
+    }
+
+    @media(max-width:768px){
+      header {flex-direction:column; padding:20px;}
+      .hero h1 {font-size:28px;}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo-legowo.png" alt="Logo">
+    <span>UD Legowo Jati</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="#">Produk</a>
+    <a href="#">Galeri</a>
+    <a href="#">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Tentang Kami</h1>
+</section>
+
+<section class="section">
+  <h2>Siapa Kami</h2>
+  <p>
+    UD Legowo Jati adalah perusahaan yang bergerak di bidang penyediaan kayu jati berkualitas tinggi 
+    yang berasal langsung dari sumber terbaik di Indonesia. Kami berkomitmen menghadirkan material kayu 
+    yang kuat, tahan lama, dan memiliki nilai estetika tinggi.
+  </p>
+
+  <p>
+    Dengan pengalaman bertahun-tahun di industri kayu, kami memahami bahwa setiap potongan kayu memiliki 
+    karakter unik. Oleh karena itu, kami memastikan setiap produk yang kami tawarkan telah melalui proses 
+    seleksi ketat.
+  </p>
+
+  <div class="highlight">
+    <p>
+      "Bagi kami, kayu bukan sekadar material — tetapi bagian dari keindahan, kekuatan, dan warisan yang bertahan lama."
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Visi & Misi</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Visi</h3>
+      <p>
+        Menjadi supplier kayu jati terpercaya yang dikenal karena kualitas, kejujuran, dan pelayanan terbaik.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Misi</h3>
+      <p>
+        Menyediakan kayu jati berkualitas tinggi, harga kompetitif, serta pelayanan profesional untuk memenuhi kebutuhan pelanggan.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Kenapa Memilih Kami?</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Kualitas Premium</h3>
+      <p>Kayu jati pilihan dengan ketahanan tinggi terhadap cuaca dan usia.</p>
+    </div>
+
+    <div class="card">
+      <h3>Harga Bersaing</h3>
+      <p>Langsung dari sumber, tanpa perantara yang membuat harga lebih mahal.</p>
+    </div>
+
+    <div class="card">
+      <h3>Custom & Fleksibel</h3>
+      <p>Kami menerima pesanan sesuai kebutuhan proyek Anda.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 UD Legowo Jati</p>
+  <p>Selembut Hati, Sekuat Jati</p>
+</footer>
+
+</body>
+</html>
