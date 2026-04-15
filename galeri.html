@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - UD Legowo Jati</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+    body {background:#0d0d0d; color:#fff;}
+
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 60px;
+      background:#c19a6b;
+    }
+
+    .logo {display:flex; align-items:center; gap:10px;}
+    .logo img {height:45px;}
+    .logo span {color:#fff; font-weight:600;}
+
+    nav a {
+      margin:0 15px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    nav a:hover {color:#000;}
+
+    .hero {
+      height:50vh;
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('kayujati.png');
+      background-size:cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      flex-direction:column;
+    }
+
+    .hero h1 {
+      font-size:42px;
+      color:#c19a6b;
+    }
+
+    .hero p {
+      color:#ccc;
+      margin-top:10px;
+    }
+
+    .section {
+      padding:70px 60px;
+    }
+
+    /* GRID GALERI PREMIUM */
+    .gallery {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px;
+    }
+
+    .gallery-item {
+      position:relative;
+      overflow:hidden;
+      border-radius:12px;
+      cursor:pointer;
+    }
+
+    .gallery-item img {
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      transition:0.4s;
+    }
+
+    .gallery-item:hover img {
+      transform:scale(1.1);
+    }
+
+    .overlay {
+      position:absolute;
+      bottom:0;
+      left:0;
+      right:0;
+      background:linear-gradient(transparent, rgba(0,0,0,0.9));
+      padding:15px;
+      opacity:0;
+      transition:0.3s;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity:1;
+    }
+
+    .overlay h3 {
+      font-size:16px;
+      color:#c19a6b;
+    }
+
+    .overlay p {
+      font-size:12px;
+      color:#ccc;
+    }
+
+    /* CTA SECTION */
+    .cta {
+      margin-top:60px;
+      text-align:center;
+    }
+
+    .cta h2 {
+      color:#c19a6b;
+      margin-bottom:15px;
+    }
+
+    .cta p {
+      color:#ccc;
+      margin-bottom:20px;
+    }
+
+    .btn {
+      display:inline-block;
+      padding:14px 30px;
+      background:#25D366;
+      color:#fff;
+      text-decoration:none;
+      border-radius:6px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover {
+      background:#1ebe5d;
+    }
+
+    footer {
+      padding:30px;
+      text-align:center;
+      margin-top:50px;
+      font-size:14px;
+      background:
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+        url('kayujati.png');
+      background-size:cover;
+    }
+
+    @media(max-width:768px){
+      header {flex-direction:column;}
+      .hero h1 {font-size:28px;}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo-legowo.png">
+    <span>UD Legowo Jati</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="produk.html">Produk</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="#">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Galeri Proyek & Produk</h1>
+  <p>Bukti nyata kualitas kayu jati kami</p>
+</section>
+
+<section class="section">
+
+  <div class="gallery">
+
+  <div class="gallery-item">
+    <img src="galeri1.jpeg" onclick="openLightbox(this.src)">
+    <div class="overlay">
+      <h3>Gazebo Taman</h3>
+      <p>Finishing halus & tahan cuaca</p>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="galeri2.jpeg" onclick="openLightbox(this.src)">
+    <div class="overlay">
+      <h3>Kusen Premium</h3>
+      <p>Presisi tinggi & kuat</p>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="galeri3.jpeg" onclick="openLightbox(this.src)">
+    <div class="overlay">
+      <h3>Balok Struktur</h3>
+      <p>Kokoh untuk konstruksi</p>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<footer>
+  <p>© 2026 UD Legowo Jati</p>
+  <p>Selembut Hati, Sekuat Jati</p>
+</footer>
+
+</body>
+</html>
